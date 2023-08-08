@@ -1,0 +1,16 @@
+/*
+CSS EXTERNO
+
+seletor {
+    propriedade: valor;
+}
+*/
+
+body {
+    background-color: #000;
+    color: #FFF ;
+}
+
+p {
+    color: #FFFFFF50;
+}
