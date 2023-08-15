@@ -1,14 +1,21 @@
 html, body {
     margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 
 header{
     background: #000;
+    color: #fff;
+}
+
+header div{
     display: flex;
     gap: 10px;
+    flex-direction: row;
     align-items: center;
+    width: 1000px;
+    margin: 0 auto;
     height: 45px;
-    color: #fff;
 }
 
 header h1{
@@ -19,8 +26,56 @@ header h1{
 header img {
     width: 30px;
     height: 30px;
-    margin: 0 0 0 20px;
 }
 header span{
-    margin: 0 20px 0 auto;
+    margin: 0 0 0 auto;
+}
+
+#exec1 {
+    background: #CCC;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bloco {
+    background: #000;
+    width: 60px;
+    height: 60px;   
+}
+
+.rightauto{
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#sidebar-right, #sidebar-left {
+    width: 200px;
+    background: #CCC;
+    height: 500px;
+}
+
+#content {
+    width: 520px;
+    background: #f1f1f1;
+    height: 500px;
+    padding: 20px;
+}
+
+footer{
+    background: #CCC;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
