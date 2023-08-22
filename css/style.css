@@ -3,6 +3,10 @@ html, body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 header{
     background: #000;
     color: #fff;
@@ -10,12 +14,16 @@ header{
 
 header div{
     display: flex;
-    gap: 10px;
     flex-direction: row;
     align-items: center;
-    width: 1000px;
-    margin: 0 auto;
     height: 45px;
+}
+
+header a.logotype{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
 }
 
 header h1{
@@ -27,8 +35,22 @@ header img {
     width: 30px;
     height: 30px;
 }
-header span{
+
+header nav{
     margin: 0 0 0 auto;
+}
+
+header nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    gap: 20px;
+}
+
+header nav ul li a{
+    color: #fff;
+    padding: 0 0 8px 0;
 }
 
 #exec1 {
@@ -52,12 +74,20 @@ header span{
     margin-right: auto;
 }
 
-main {
-    display: flex;
+.wrapper {
     width: 1000px;
     margin: 0 auto;
+}
+
+main {
+    display: flex;
     gap: 20px;
 }
+
+main.wrapper{
+    margin: 20px auto;
+}
+
 
 #sidebar-right, #sidebar-left {
     width: 200px;
@@ -78,4 +108,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.active{
+    border-bottom: 4px solid #da3c07;
 }
