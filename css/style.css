@@ -91,7 +91,6 @@ main.wrapper{
 
 #sidebar-right, #sidebar-left {
     width: 200px;
-    background: #CCC;
     height: 500px;
 }
 
@@ -100,6 +99,9 @@ main.wrapper{
     background: #f1f1f1;
     height: 500px;
     padding: 20px;
+}
+#content h1{
+    margin: 0 0 20px 0;
 }
 
 footer{
@@ -112,4 +114,27 @@ footer{
 
 .active{
     border-bottom: 4px solid #da3c07;
+}
+
+.card {
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    margin: 0 0 20px 0
+}
+
+.card img{
+    border-radius: 15px 15px 0 0;
+
+}
+
+.card div{
+    padding: 20px;
+}
+
+.card div h3{
+    margin: 0 0 10px 0;
+}
+
+.card div p{
+    margin: 0;
 }
