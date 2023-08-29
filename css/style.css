@@ -153,3 +153,15 @@ footer{
     margin-top: 10px;
     display: inline-block;
 }
+
+table{
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #CCC;
+}
+
+th, td{
+    padding: 5px 10px;
+}
