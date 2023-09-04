@@ -53,6 +53,19 @@ header nav ul li a{
     padding: 0 0 8px 0;
 }
 
+header nav ul li button{
+    background: #da3c07;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+header nav ul li button:hover{
+    background: #f16f44;
+}
+
 #exec1 {
     background: #CCC;
     width: 300px;

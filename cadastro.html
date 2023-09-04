@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Tech Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+     
+  <header>
+    <div class="wrapper">
+      <a href="index.html" class="logotype">
+        <img src="img/coffee-icon.svg" alt="Tech Coffee Logo">
+        <h1>Tech Coffee</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><button onclick="window.location.href='cadastro.html';">Cadastre-se</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+  <main class="wrapper">
+    <div id="sidebar-right"></div>
+    <div id="content">
+      <h1>Cadastre-se</h1>
+      
+      <form action="cadastro.php" method="post">
+        <label for="name">Nome:</label> <input type="text" id="name" name="nameUser" placeholder="Digite seu nome..."><br>
+        <label for="pass">Senha: </label><input type="password" id="pass" name="passUser"><br>
+      
+        <label for="email">Email: </label><input type="email" id="email" name="emailUser"><br>
+        <label for="idade">Idade: </label><input type="number" id="idade" name="idadeUser"><br>
+
+        File: <input type="file"><br>
+
+        <input type="checkbox" id="news" name="newsUser" checked> <label for="news">Deseja receber as novidades por email?</label>
+        <h4>Selecione a Periodicidade</h4>
+        <input type="radio" id="daily" name="periodicity" value="D"> <label for="daily">Diário</label><br>
+        <input type="radio" id="weekly" name="periodicity" value="W" checked> <label for="weekly">Semanal</label><br>
+        <input type="radio" id="monthly" name="periodicity" value="M"> <label for="monthly">Mensal</label>
+      
+        <h4>Escreva um Comentário:</h4>
+        <textarea placeholder="Escreva aqui o seu Comentário..."></textarea>
+        <br>
+        
+        <label for="state">Estado:</label>
+        <select id="state" name="userState">
+          <option value="SP">São Paulo</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="SC">Santa Catarina</option>
+        </select>
+        <br>
+        <input type="submit" value="Cadastrar">
+
+        <br>
+        Exemplo Reset:
+        <input type="reset" value="Limpar">
+      
+      </form>
+
+    </div>
+    <div id="sidebar-left"></div>
+  </main>
+
+  <footer>
+      <span>Renan Cavichi @ 2023</span>
+  </footer>
+  
+  </body>
+</html>
