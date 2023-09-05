@@ -29,38 +29,62 @@
       <h1>Cadastre-se</h1>
       
       <form action="cadastro.php" method="post">
-        <label for="name">Nome:</label> <input type="text" id="name" name="nameUser" placeholder="Digite seu nome..."><br>
-        <label for="pass">Senha: </label><input type="password" id="pass" name="passUser"><br>
-      
-        <label for="email">Email: </label><input type="email" id="email" name="emailUser"><br>
-        <label for="idade">Idade: </label><input type="number" id="idade" name="idadeUser"><br>
-
-        File: <input type="file"><br>
-
-        <input type="checkbox" id="news" name="newsUser" checked> <label for="news">Deseja receber as novidades por email?</label>
-        <h4>Selecione a Periodicidade</h4>
-        <input type="radio" id="daily" name="periodicity" value="D"> <label for="daily">Diário</label><br>
-        <input type="radio" id="weekly" name="periodicity" value="W" checked> <label for="weekly">Semanal</label><br>
-        <input type="radio" id="monthly" name="periodicity" value="M"> <label for="monthly">Mensal</label>
-      
-        <h4>Escreva um Comentário:</h4>
-        <textarea placeholder="Escreva aqui o seu Comentário..."></textarea>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="name">Nome:</label><br>
+          <input type="text" id="name" name="nameUser" placeholder="Digite seu nome..."><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="emailUser"><br>
+          <label for="cpf">CPF:</label><br>
+          <input type="text" id="cpf" name="cpfUser"><br>
+          <label for="nascimento">Data de Nascimento:</label><br>
+          <input type="date" id="nascimento" name="nascimentoUser"><br>
+        </fieldset>
+        <fieldset>
+          <legend>Endereço</legend>
+          <label for="cep">CEP:</label><br>
+          <input type="text" id="cep" name="cepUser" placeholder="00000-000"><br>
+          <div class="flex">
+            <div>
+              <label for="street">Rua:</label><br>
+              <input type="text" id="street" name="streetUser"><br>
+            </div>
+            <div>
+              <label for="number">Número:</label><br>
+              <input type="text" id="number" name="numberUser"><br>
+            </div>
+          </div>
+          <label for="complement">Complemento:</label><br>
+          <input type="text" id="complement" name="complementUser"><br>
+          <label for="region">Bairro:</label><br>
+          <input type="text" id="region" name="regionUser"><br>
+          <label for="state">Estado:</label>
+          <select id="state" name="userState">
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SC">Santa Catarina</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Dados do Cartão</legend>
+          <label for="cardName">Nome no Cartão:</label><br>
+          <input type="text" id="cardName" name="cardName"><br>
+          <label for="cardNumber">Número:</label><br>
+          <input type="text" id="cardNumber" name="cardNumber"><br>
+          <div class="flex">
+            <div>
+              <label for="valid">Validade:</label><br>
+              <input type="text" id="valid" name="valid"><br>
+            </div>
+            <div>
+              <label for="ccv">CCV:</label><br>
+              <input type="text" id="ccv" name="ccv"><br>
+            </div>
+          </div>
+        </fieldset>
         <br>
-        
-        <label for="state">Estado:</label>
-        <select id="state" name="userState">
-          <option value="SP">São Paulo</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="SC">Santa Catarina</option>
-        </select>
-        <br>
-        <input type="submit" value="Cadastrar">
-
-        <br>
-        Exemplo Reset:
-        <input type="reset" value="Limpar">
-      
+        <input type="submit" value="Comprar">
       </form>
 
     </div>
