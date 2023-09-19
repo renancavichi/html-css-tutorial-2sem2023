@@ -40,6 +40,10 @@ header nav{
     margin: 0 0 0 auto;
 }
 
+header nav img{
+    display: none;
+}
+
 header nav ul{
     display: flex;
     padding: 0;
@@ -201,4 +205,37 @@ input[type=text], input[type=email], input[type=date], select{
 form .flex{
     display: flex;
     gap: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper{
+        width: 100%;
+    }
+    #sidebar-right, #sidebar-left{
+        width: 15%;
+    }
+    #content{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    header nav img {
+        display: block;
+    }
+    header nav ul {
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+     
+}
+
+@media screen and (min-width: 550px) and (max-width: 700px) {
+    header {
+        background: #720404;
+        width: 100%;
+    }
 }
