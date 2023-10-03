@@ -37,16 +37,16 @@ console.log('Meu nome é <div onclick="alert('+"'"+'teste'+"'"+')">' + nome + ' 
 console.log(`Meu nome é <div onclick="alert('teste')"> ${nome} e à tenho ${idade} anos`)
 console.log(`Meu nome é ${nome} e tenho ${idade} anos`)
 
-//Funções
+//funções
 function verificaIdade(){
     const inputIdade = document.getElementById('txt-idade') //pega o elemento input
     const pResultado = document.getElementById('resultado')
     const idade = inputIdade.value //pega o valor do input
     console.log(inputIdade.value) 
     if(idade < 25)
-        pResultado.innerHTML = pResultado.innerHTML + '<span style="color: #ff4900">Jovem</span>' //
+        pResultado.innerHTML = pResultado.innerHTML + ' <span style="color: #ff4900">Jovem</span>' //adiciona um texto no elemento final do p
     else
-        pResultado.innerHTML = '<span style="color: #ff4900">Adulto</span>'
+        pResultado.innerHTML = '<span style="color: #ff4900">Adulto</span> ' + pResultado.innerHTML //adiciona um texto no elemento inicio do p
 }
 
 
