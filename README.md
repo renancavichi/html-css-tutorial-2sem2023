@@ -92,3 +92,18 @@
  seletor {
     propriedade: valor;
  }
+
+ ## Javascript
+
+ https://www.w3schools.com/js/default.asp
+ https://www.udemy.com/course/curso-web/
+ https://www.youtube.com/watch?v=SajRjc9KKUE&list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT
+
+   - Como rodar js Externo e Interno
+   - console.log() console.warn() console.error
+   - Const, Let e var
+   - If else
+   - Operador ternário
+   - Concatenação de String
+   - Template String
+   - getElementById
