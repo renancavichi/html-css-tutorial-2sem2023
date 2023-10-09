@@ -29,6 +29,7 @@ else
 
 // operador ternário
 ligado ? console.log('Ligado') : console.log('Desligado')
+const age = idade < 25 ? 'Jovem' : 'Adulto'
 
 //Concatenação de Strings
 console.log('Meu nome é <div onclick="alert('+"'"+'teste'+"'"+')">' + nome + ' e tenho ' + idade + ' anos')
@@ -49,5 +50,23 @@ function verificaIdade(){
         pResultado.innerHTML = '<span style="color: #ff4900">Adulto</span> ' + pResultado.innerHTML //adiciona um texto no elemento inicio do p
 }
 
+function addProduct(){
+    const inputName = document.getElementById('txt-name')
+    const inputPrice = document.getElementById('txt-price')
+    const inputPhoto = document.getElementById('txt-photo')
+    const divProductList = document.getElementById('product-list')
+    divProductList.innerHTML += `
+        <div class="card-product">
+          <img src="${inputPhoto.value}" alt="${inputName.value}">
+          <div>
+            <h5>${inputName.value}</h5>
+            <span>R$ ${inputPrice.value}</span>
+          </div>
+        </div>
+    `
+    inputName.value = null
+    inputPrice.value = null
+    inputPhoto.value = null
+}
 
 

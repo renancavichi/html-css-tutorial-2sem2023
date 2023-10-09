@@ -31,9 +31,19 @@
     <div id="sidebar-left">Sidebar left</div>
     <div id="content">
       <h1>Produto</h1>
-      <input type="text" id="txt-idade">
+      Idade: <input type="text" id="txt-idade">
       <button onclick="verificaIdade()">Verificar</button>
       <p id="resultado"></p>
+
+      <h3>Novo Produto</h3>
+
+      Nome: <input type="text" id="txt-name"><br>
+      Preço: <input type="text" id="txt-price"><br>
+      Foto: <input type="text" id="txt-photo"><br>
+      <button onclick="addProduct()">Add</button>
+      <div id="product-list">
+        
+      </div>
     </div>
     <div id="sidebar-right">Sidebar right</div>
   </main>

@@ -107,3 +107,4 @@
    - Concatenação de String
    - Template String
    - getElementById
+   - Funções (Arrow Function)

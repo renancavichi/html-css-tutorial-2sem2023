@@ -209,6 +209,32 @@ form .flex{
     gap: 15px;
 }
 
+#product-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+.card-product{
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+.card-product img{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px 10px 0 0;
+    object-fit: contain;
+}
+.card-product div h5{
+    margin: 0;
+}
+.card-product div span{
+    color: green;
+}
+.card-product > div{
+    padding: 10px;
+}
+
 @media screen and (max-width: 1024px) {
     .wrapper{
         width: calc(100% - 30px);
