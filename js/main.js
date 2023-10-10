@@ -69,6 +69,7 @@ function addProduct(){
     inputPhoto.value = null
 }
 
+// Exemplo usando função arrow
 // const addProduct = () => {
 //     const inputName = document.getElementById('txt-name')
 //     const inputPrice = document.getElementById('txt-price')
@@ -88,35 +89,47 @@ function addProduct(){
 //     inputPhoto.value = null
 // }
 
+// exemplo função anônima sendo atribuída a uma constante
 const testeFuncAnonima = function (){
     console.log('função anônima')
 }
 
+// execução da função
 testeFuncAnonima()
 
+// exemplo função arrow sendo atribuída a uma constante
 const funcArrow = () => {
     console.log('função arrow')
 }
 
+// execução da função
 funcArrow()
 
+// exemplo função arrow com dois parâmetros de entrada e retorno
 const soma = (value1, value2) => {
     const resultado = value1 + value2
     return resultado 
 }
 
-const soma10 = value1 => console.log(value1 + 10)
+// exemplo função arrow com um parâmetro de entrada e retorno
+const soma10 = value1 => value1 + 10
 
-soma10(5)
+// execução da função
+console.log(soma10(5))
 
+// res recebe o retorno da função
 let res = soma(20, 10)
-const value1 = 10
-const value2 = 8
 
-res = soma(value1, value2)
+// usando a constantes como entrada da função
+const v1 = 10
+const v2 = 8
+res = soma(v1, v2)
+console.log(res)
 
-const greetings = (name) => { return `Olá ${name}, seja bem vindo!`}
+const var1 = '10'
+console.log(parseInt(var1))
 
+//const greetings = (name) => { return `Olá ${name}, seja bem vindo!`}
+const greetings = name => `Olá ${name}, seja bem vindo!`
 console.log(greetings('Renan'))
 
-console.log(res)
