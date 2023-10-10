@@ -64,9 +64,59 @@ function addProduct(){
           </div>
         </div>
     `
-    inputName.value = null
-    inputPrice.value = null
+    inputName.value = null // ou ''
+    inputPrice.value = ''
     inputPhoto.value = null
 }
 
+// const addProduct = () => {
+//     const inputName = document.getElementById('txt-name')
+//     const inputPrice = document.getElementById('txt-price')
+//     const inputPhoto = document.getElementById('txt-photo')
+//     const divProductList = document.getElementById('product-list')
+//     divProductList.innerHTML += `
+//         <div class="card-product">
+//           <img src="${inputPhoto.value}" alt="${inputName.value}">
+//           <div>
+//             <h5>${inputName.value}</h5>
+//             <span>R$ ${inputPrice.value}</span>
+//           </div>
+//         </div>
+//     `
+//     inputName.value = null // ou ''
+//     inputPrice.value = ''
+//     inputPhoto.value = null
+// }
 
+const testeFuncAnonima = function (){
+    console.log('função anônima')
+}
+
+testeFuncAnonima()
+
+const funcArrow = () => {
+    console.log('função arrow')
+}
+
+funcArrow()
+
+const soma = (value1, value2) => {
+    const resultado = value1 + value2
+    return resultado 
+}
+
+const soma10 = value1 => console.log(value1 + 10)
+
+soma10(5)
+
+let res = soma(20, 10)
+const value1 = 10
+const value2 = 8
+
+res = soma(value1, value2)
+
+const greetings = (name) => { return `Olá ${name}, seja bem vindo!`}
+
+console.log(greetings('Renan'))
+
+console.log(res)
