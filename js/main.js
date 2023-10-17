@@ -42,8 +42,7 @@ console.log(`Meu nome é ${nome} e tenho ${idade} anos`)
 function verificaIdade(){
     const inputIdade = document.getElementById('txt-idade') //pega o elemento input
     const pResultado = document.getElementById('resultado')
-    const idade = inputIdade.value //pega o valor do input
-    console.log(inputIdade.value) 
+    const idade = inputIdade.value //pega o valor do input 
     if(idade < 25)
         pResultado.innerHTML = pResultado.innerHTML + ' <span style="color: #ff4900">Jovem</span>' //adiciona um texto no elemento final do p
     else
@@ -132,4 +131,5 @@ console.log(parseInt(var1))
 //const greetings = (name) => { return `Olá ${name}, seja bem vindo!`}
 const greetings = name => `Olá ${name}, seja bem vindo!`
 console.log(greetings('Renan'))
+
 
