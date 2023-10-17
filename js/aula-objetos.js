@@ -83,3 +83,32 @@ console.log(produtao)
 
 const preco = "R$ 9934,00"
 
+//Atividade Objetos
+
+const usuario = {
+    "nome-completo": "Renan",
+    "02 idade": 39,
+    email: "renancavichi"
+}
+
+const endereco = {
+    rua: "Rua Dez",
+    numero: 0,
+    cep: '12665-320'
+} 
+
+const cartao = {
+    nome: "RENAN C",
+    numero: "21313123123",
+    cvv: '456',
+    validade: '10/24'
+}
+
+const compra = {
+    ...usuario,
+    ...endereco,
+    payment: cartao,
+    valor: "R$ 200,00"
+}
+
+console.log(compra)
