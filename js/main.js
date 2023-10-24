@@ -60,7 +60,7 @@ function addProduct(){
         preco: inputPrice.value,
         foto: inputPhoto.value
     })
-    //divProductList.innerHTML = ''
+    divProductList.innerHTML = ''
     loadProducts()
     inputName.value = null // ou ''
     inputPrice.value = ''
