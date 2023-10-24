@@ -55,7 +55,12 @@ function addProduct(){
     const inputPhoto = document.getElementById('txt-photo')
     const divProductList = document.getElementById('product-list')
     // add novo produto no array
-    divProductList.innerHTML = ''
+    produtos.push({
+        nome: inputName.value,
+        preco: inputPrice.value,
+        foto: inputPhoto.value
+    })
+    //divProductList.innerHTML = ''
     loadProducts()
     inputName.value = null // ou ''
     inputPrice.value = ''
