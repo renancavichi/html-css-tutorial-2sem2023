@@ -133,3 +133,39 @@ const greetings = name => `Olá ${name}, seja bem vindo!`
 console.log(greetings('Renan'))
 
 
+const produtos = [
+    {
+        nome: "Mochila",
+        preco: "R$ 330,00",
+        foto: "url..."
+    },
+    {
+        nome: "Mochila",
+        preco: "R$ 330,00",
+        foto: "url..."
+    },
+    {
+        nome: "Mochila",
+        preco: "R$ 330,00",
+        foto: "url..."
+    },
+    {
+        nome: "Mochila",
+        preco: "R$ 330,00",
+        foto: "url..."
+    }
+]
+
+const loadProducts = () => {
+    const divProductList = document.getElementById('product-list')
+    //implementar o array map
+    divProductList.innerHTML += `
+        <div class="card-product">
+          <img src="${produtos[0].foto}" alt="${produtos[0].nome}">
+          <div>
+            <h5>${produtos[0].nome}</h5>
+            <span>R$ ${produtos[0].preco}</span>
+          </div>
+        </div>
+    `
+}

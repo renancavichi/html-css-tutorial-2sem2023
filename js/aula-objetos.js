@@ -73,7 +73,7 @@ const extraProduto = {
     "01 carga": 10
 }
 
-const newProd = {...extraProduto, }
+const newProd = {...extraProduto}
 
 console.log(extraProduto)
 
@@ -112,3 +112,22 @@ const compra = {
 }
 
 console.log(compra)
+
+const errors = {
+    message: "Dados inválidos",
+    fields: {
+        name: [
+            "Nome é requerido",
+            "Nome deve ter mais de 3 caracteres" 
+        ],
+        password: [
+            "A senha deve ter um caractere minúsculo",
+            "A senha deve ter um caractere maiúsculo",
+            "A senha deve ter um caractere especial"
+        ]
+    }
+}
+if(errors?.fields?.name){
+    console.log(errors.fields.name[0])
+}
+
