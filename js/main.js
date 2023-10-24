@@ -54,15 +54,9 @@ function addProduct(){
     const inputPrice = document.getElementById('txt-price')
     const inputPhoto = document.getElementById('txt-photo')
     const divProductList = document.getElementById('product-list')
-    divProductList.innerHTML += `
-        <div class="card-product">
-          <img src="${inputPhoto.value}" alt="${inputName.value}">
-          <div>
-            <h5>${inputName.value}</h5>
-            <span>R$ ${inputPrice.value}</span>
-          </div>
-        </div>
-    `
+    // add novo produto no array
+    divProductList.innerHTML = ''
+    loadProducts()
     inputName.value = null // ou ''
     inputPrice.value = ''
     inputPhoto.value = null
@@ -137,35 +131,38 @@ const produtos = [
     {
         nome: "Mochila",
         preco: "R$ 330,00",
-        foto: "url..."
+        foto: "https://imaginarium.vtexassets.com/arquivos/ids/9909618/Mochila-Laptop-Strap-Caramelo-e-Bordo.jpg?v=638288621835570000"
     },
     {
-        nome: "Mochila",
-        preco: "R$ 330,00",
-        foto: "url..."
+        nome: "Legal Pro",
+        preco: "R$ 230,00",
+        foto: "https://classecouro.com.br/cdn/shop/products/1961-3B_A_1000x.jpg?v=1674147700"
     },
     {
-        nome: "Mochila",
+        nome: "Ómiaranha",
         preco: "R$ 330,00",
-        foto: "url..."
+        foto: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTREx3c_ajowyk3gDcSZcmi30lOZXkchinR3wpeo7ACFOLf9_ke-dXXmB84vU9IyrkLGRniorNGvodaYm68YXKCwiXAzRnWU4QtDZRQ99In4vH6yywTAzjtW9ZJBBl11ggkcxADZLc&usqp=CAc"
     },
     {
-        nome: "Mochila",
+        nome: "Ómaranha",
         preco: "R$ 330,00",
-        foto: "url..."
+        foto: "https://static.riachuelo.com.br/RCHLO/13729144001/square/e3fd9d5159dd15a90b099e6c183e0619370ef1bd.jpg?imwidth=480"
     }
 ]
 
 const loadProducts = () => {
     const divProductList = document.getElementById('product-list')
-    //implementar o array map
-    divProductList.innerHTML += `
+    
+    produtos.map((produto)=>{
+        divProductList.innerHTML += `
         <div class="card-product">
-          <img src="${produtos[0].foto}" alt="${produtos[0].nome}">
+          <img src="${produto.foto}" alt="${produto.nome}">
           <div>
-            <h5>${produtos[0].nome}</h5>
-            <span>R$ ${produtos[0].preco}</span>
+            <h5>${produto.nome}</h5>
+            <span>R$ ${produto.preco}</span>
           </div>
         </div>
     `
+    })
+    
 }

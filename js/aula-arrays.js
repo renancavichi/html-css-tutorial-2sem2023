@@ -64,3 +64,8 @@ numeros.map((numero, index)=>{
     console.log("Valor de i: ", index)
     console.log(numero)
 })
+
+numeros.push(87)
+numeros.push(98)
+
+console.log(numeros)
