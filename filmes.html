@@ -4,9 +4,9 @@
     <title>Tech Coffee</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script src="js/main.js"></script>
+    
   </head>
-  <body>
+  <body onload="">
      
   <header>
     <div class="wrapper">
@@ -20,8 +20,6 @@
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="video.html">Vídeos</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="filmes.html">Filmes</a></li>
           <li><button onclick="window.location.href='/cadastro.html'">Cadastre-se</button></li>
         </ul>
         <img src="img/menu.svg" width="40px" height="40px" alt="Menu Icon">
@@ -32,25 +30,18 @@
   <main class="wrapper">
     <div id="sidebar-left">Sidebar left</div>
     <div id="content">
-      <h1>Home</h1>
-      <h2>Atividade Flex</h2>
-      <div id="exec1">
-        <div class="bloco"></div>
-        <div class="bloco rightauto"></div>
-        <div class="bloco"></div>
+      <h1>Filmes</h1>
+
+      Nome: <input type="text" id="txt-name"><br>
+      Categoria: <input type="text" id="txt-categoria"><br>
+      Capa: <input type="text" id="txt-capa"><br>
+      <button onclick="addMovie()">Add</button>
+      <button onclick="showMovies()">Show All</button>
+      <button onclick="removeLastMovie()">Remove Last</button>
+      <button onclick="removeMovieByName()">Remove by Name</button>
+      <div id="movie-list">
+        
       </div>
-      <h3>Lista -  Não Ordenada</h3>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
-      <h3>Lista - Ordenada</h3>
-      <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ol>
     </div>
     <div id="sidebar-right">Sidebar right</div>
   </main>
@@ -59,12 +50,6 @@
       <span>Renan Cavichi @ 2023</span>
   </footer>
   
-  <script>
-    console.log('Interno!')
-    const sidebarRight = document.getElementById('sidebar-right')
-    sidebarRight.style.backgroundColor = '#d4f3ff'
-    sidebarRight.style.color = idade < 18 ? '#FF0000' : '#00FF00'
-  </script>
-
   </body>
+  <script src="js/main.js"></script>
 </html>
