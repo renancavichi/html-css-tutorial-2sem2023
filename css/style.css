@@ -209,7 +209,7 @@ form .flex{
     gap: 15px;
 }
 
-#product-list{
+#product-list, #movie-list{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
