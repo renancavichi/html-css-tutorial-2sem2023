@@ -1,0 +1,33 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: #e5e5e59b;
+    border-bottom: 1px solid #d0d0d0;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header h1 span{
+    color: rgb(0, 120, 139);
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    padding: 0 30px;
+}
+
+button{
+    padding: 8px 20px;
+    background: #a1eaf7;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 90, 139);
+    cursor: pointer;
+}
