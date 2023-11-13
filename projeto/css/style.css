@@ -4,7 +4,7 @@ html, body{
 }
 
 header{
-    width: 100%;
+    width: calc(100% - 60px);
     height: 60px;
     background: #e5e5e59b;
     border-bottom: 1px solid #d0d0d0;
@@ -19,7 +19,7 @@ header h1 span{
 }
 
 main{
-    width: 100%;
+    width: calc(100% - 60px);
     padding: 0 30px;
 }
 
@@ -30,4 +30,27 @@ button{
     border-radius: 5px;
     border: 1px solid rgb(0, 90, 139);
     cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    min-height: calc(100vh - 400px);
+}
+
+#result button{
+    padding: 8px 20px;
+    background: #d3f1f6;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid rgb(119, 188, 226);
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+footer {
+    height: 200px;
+    background-color: #e5e5e59b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
