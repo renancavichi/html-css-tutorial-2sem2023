@@ -1,0 +1,85 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: calc(100% - 60px);
+    height: 60px;
+    background: #e5e5e59b;
+    border-bottom: 1px solid #d0d0d0;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header h1 span{
+    color: rgb(0, 120, 139);
+    margin: 0;
+}
+
+main{
+    width: calc(100% - 60px);
+    padding: 0 30px;
+}
+
+input[type="text"]{
+    padding: 7px 4px;
+}
+
+button{
+    padding: 8px 20px;
+    background: #a1eaf7;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 90, 139);
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    min-height: calc(100vh - 400px);
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#result button{
+    padding: 8px 20px;
+    background: #d3f1f6;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid rgb(119, 188, 226);
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+footer {
+    height: 200px;
+    background-color: #e5e5e59b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-product{
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    height: 250px;
+    width: 140px;
+}
+.card-product img{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px 10px 0 0;
+    object-fit: contain;
+}
+.card-product div h5{
+    margin: 0;
+}
+.card-product div span{
+    color: green;
+}
+.card-product > div{
+    padding: 10px;
+}
