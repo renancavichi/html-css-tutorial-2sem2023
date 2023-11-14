@@ -1,10 +1,9 @@
 const getVehicle = async (type) =>{
-    typeVehicle = type
     const divResult = document.querySelector('#result')
     divResult.innerHTML = '<p>Carregando...</p>'
 
     const response = await fetch(`https://parallelum.com.br/fipe/api/v1/${type}/marcas`, {
-    method: 'GET'
+        method: 'GET'
     })
     
     if(response.ok){
@@ -28,12 +27,12 @@ const getModels = async (type, idMarca) =>{
     divResult.innerHTML = '<p>Carregando...</p>'
 
     const response = await fetch(`https://parallelum.com.br/fipe/api/v1/${type}/marcas/${idMarca}/modelos`, {
-    method: 'GET'
+        method: 'GET'
     })
     
     if(response.ok){
         const data = await response.json()
-        console.log(data.modelos)
+        console.log(data)
         divResult.innerHTML = ''
         data.modelos.map((model)=>{
             divResult.innerHTML += `<button onclick="getYears('${type}', ${idMarca}, ${model.codigo})">${model.nome}</button><br>` 
@@ -52,7 +51,7 @@ const getYears = async (type, idMarca, idModelo) =>{
     divResult.innerHTML = '<p>Carregando...</p>'
 
     const response = await fetch(`https://parallelum.com.br/fipe/api/v1/${type}/marcas/${idMarca}/modelos/${idModelo}/anos`, {
-    method: 'GET'
+        method: 'GET'
     })
     
     if(response.ok){
@@ -76,17 +75,19 @@ const getAllInfo = async (type, idMarca, idModelo, idYear) =>{
     divResult.innerHTML = '<p>Carregando...</p>'
 
     const response = await fetch(`https://parallelum.com.br/fipe/api/v1/${type}/marcas/${idMarca}/modelos/${idModelo}/anos/${idYear}`, {
-    method: 'GET'
+        method: 'GET'
     })
     
     if(response.ok){
         const data = await response.json()
         console.log(data)
         divResult.innerHTML = `
-            <p>Ano Modelo: ${data.AnoModelo}</p>
-            <p>Código Fipe: ${data.CodigoFipe}</p>
-            <p>Combustivel: ${data.Combustivel}</p>
-            <p>Valor: ${data.Valor}</p>
+        <p>Marca: ${data.Marca}</p>
+        <p>Modelo: <b>${data.Modelo}</b></p>
+        <p>Ano Modelo: ${data.AnoModelo}</p>
+        <p>Código Fipe: ${data.CodigoFipe}</p>
+        <p>Combustivel: ${data.Combustivel}</p>
+        <p>Valor: <b>${data.Valor}<b></p>
         `
     } else {
         if(response.status === 404){

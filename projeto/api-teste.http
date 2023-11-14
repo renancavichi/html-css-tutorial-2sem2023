@@ -1,0 +1,6 @@
+// Exemplo de requisição GET para a API
+GET https://parallelum.com.br/fipe/api/v1/carros/marcas HTTP/1.1
+
+###
+
+GET https://parallelum.com.br/fipe/api/v1/carros/marcas/56/modelos HTTP/1.1
