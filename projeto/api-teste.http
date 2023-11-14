@@ -1,4 +1,5 @@
 // Exemplo de requisição GET para a API
+// Instalar Extensão VsCode REST Client
 GET https://parallelum.com.br/fipe/api/v1/carros/marcas HTTP/1.1
 
 ###
